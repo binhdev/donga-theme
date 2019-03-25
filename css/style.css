@@ -14,6 +14,13 @@ header {
   z-index: 9;
   background: rgba(255,255,255,0.75);
 }
+.header {
+
+    background: none;
+    padding: 0;
+    z-index: 1;
+
+}
 nav {
   display: block;
 }
@@ -92,6 +99,24 @@ a:hover{
 }
 
 /*menu*/
+.dropdown-menu {
+
+    padding: 0;
+    margin: 0;
+    border: none;
+
+}
+#navbar-header > ul > li > a {
+
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    display: block;
+    padding: 6px 0;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
 .dropdown-menu .dd-1 {
   min-height: 293px;
   background: url(../images/gioi-thieu.jpg) 140px bottom no-repeat;
@@ -171,7 +196,11 @@ a:hover{
     font-size: 15px;
 
 }
+.dropdown-menu .ddnav ul {
 
+    padding-left: 0;
+
+}
 .homesl {
 
     padding: 0;
@@ -484,4 +513,11 @@ a:hover{
     white-space: nowrap;
     font-size: 15px;
 
+}
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
